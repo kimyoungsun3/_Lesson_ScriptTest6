@@ -11,19 +11,30 @@ public class VariableTest : MonoBehaviour {
 	void Update () {
 		if (Input.GetKeyDown (KeyCode.Alpha1)) 
 		{
-			Func (mInt);
+			Func (1);
 		}
 		else if (Input.GetKeyDown (KeyCode.Alpha2)) 
 		{
-			Func (mFloat);
+			Func (1f);
 		}
 		else if (Input.GetKeyDown (KeyCode.Alpha3)) 
 		{
-			Func (mVector3);
+			Func (Vector3.right);
 		}		
 	}
 
-	void Func(int _x){		Debug.Log ("int:" + _x.ToString());	}
-	void Func(float _x){	Debug.Log ("float:" + _x);	}
-	void Func(Vector3 _x){	Debug.Log ("V3:" + _x);	}
+	void Func(int _x)
+	{		
+		Debug.Log ("int:" + _x.ToString());	
+	}
+
+	void Func(float _x)
+	{	
+		Debug.Log ("float:" + _x);	
+	}
+
+	void Func(Vector3 _x)
+	{	
+		Debug.Log ("V3:" + _x);	
+	}
 }

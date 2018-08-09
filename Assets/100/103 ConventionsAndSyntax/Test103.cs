@@ -6,7 +6,7 @@ public class Test103 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		Debug.Log (transform.position.x);
+		Debug.Log ("싱글 주석, 멀티 주석...");
 	}
 
 	/* 
