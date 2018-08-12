@@ -13,8 +13,11 @@ public class Test103 : MonoBehaviour {
 	 * Update는 매프레임 마다 실행된다...
 	 * 이벤트는 여기서 처리한다....
 	 * xxxxxx
-	 */
+	 /**/
 	void Update(){
-
+		float x = transform.position.x;
+		/*
+		float x2 = transform.position.x;
+		 /**/
 	}
 }
