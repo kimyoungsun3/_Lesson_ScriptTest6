@@ -14,7 +14,8 @@ public class Test105 : MonoBehaviour {
 	}
 
 	void Update(){
-		coffeeTemperature -= Time.deltaTime * 5f;
+		//coffeeTemperature -= Time.deltaTime * 5f;
+		coffeeTemperature = coffeeTemperature - Time.deltaTime * 5f;
 		TemperatureTest ();
 	}
 
