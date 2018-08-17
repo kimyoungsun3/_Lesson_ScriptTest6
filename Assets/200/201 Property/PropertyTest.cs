@@ -2,28 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PropertyTest : MonoBehaviour {
-	private int exp_;
-	public int exp {
-		get { return exp_; 	}
-		set { exp_ = value; }
-	}
-	public int level {
-		get {
-			Debug.Log ("level 호출하기 전에 작업가능");
-			return exp_ / 10; 
+namespace PropertyTest{
+	public class PropertyTest : MonoBehaviour {
+		private int exp_;
+		public int exp {
+			get { return exp_; 	}
+			set { exp_ = value; }
 		}
-	}
-	public int healt{ get; set; }
+		public int level {
+			get {
+				Debug.Log ("level 호출하기 전에 작업가능");
+				return exp_ / 10; 
+			}
+		}
+		void Start () {
+			exp = 110;
 
-
-	// Use this for initialization
-	void Start () {
-		exp = 110;
-		healt = 10;
-
-		Debug.Log ("exp : " + exp);
-		Debug.Log ("level : " + level);
-		Debug.Log ("healt : " + healt);		
+			Debug.Log ("exp : " + exp);
+			Debug.Log ("level : " + level);	
+		}
 	}
 }
