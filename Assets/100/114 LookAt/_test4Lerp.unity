@@ -764,7 +764,7 @@ MonoBehaviour:
   - {fileID: 1195569870}
   - {fileID: 552234133}
   - {fileID: 314334406}
-  speedLookAt: 10
+  speedLookAt: 1
 --- !u!81 &1925832858
 AudioListener:
   m_ObjectHideFlags: 0

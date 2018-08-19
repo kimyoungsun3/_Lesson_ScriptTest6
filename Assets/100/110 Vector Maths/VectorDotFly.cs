@@ -23,6 +23,8 @@ public class VectorDotFly : MonoBehaviour {
 		Debug.Log (_dot);
 	}
 
+
+	//-------------------
 	void OnDrawGizmos(){
 		Gizmos.color = Color.blue;
 		Gizmos.DrawRay (transform.position, transform.forward * 3f);
