@@ -17,6 +17,8 @@ namespace DeltaTimeTest{
 			move.y = Input.GetAxisRaw ("Vertical");
 			move = move.normalized;
 			transform.Translate (move * moveSpeed);
+
+			//GetComponent<Rigidbody2D> ().velocity = move * moveSpeed;
 		}
 	}
 }
