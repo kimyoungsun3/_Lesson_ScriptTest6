@@ -23,6 +23,12 @@ public class LoopScript : MonoBehaviour {
 			Debug.Log ("while:" + books [j]);
 			j++;
 		}
+
+		foreach (Transform _t in transform)
+			Debug.Log (_t.gameObject.name);
+
+		for (int i = 0, iMax = transform.childCount; i < iMax; i++)
+			Debug.Log (transform.GetChild (i).gameObject.name);
 		
 	}
 

@@ -19,7 +19,7 @@ public class LifeCycle : MonoBehaviour {
 
 	//------------------------
 	void FixedUpdate () {
-		Debug.Log (this + " FixedUpdate");		
+		Debug.Log (this + " FixedUpdate" );		
 	}
 	void Update () {
 		Debug.Log (this + " Update");		

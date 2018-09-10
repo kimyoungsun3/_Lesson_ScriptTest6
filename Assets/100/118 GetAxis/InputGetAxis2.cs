@@ -15,7 +15,12 @@ namespace GetAxisTest{
 			//float h = Input.GetAxis ("Horizontal") * range;	
 			//float v = Input.GetAxis ("Vertical") * range;
 			Vector3 move = new Vector3 (Input.GetAxis ("Horizontal"), Input.GetAxis ("Vertical"), 0f);
-			move = move.normalized * range;
+			Debug.Log ("1:" + move);
+			move = move.normalized ;
+			Debug.Log ("2:" + move);
+			move = move * range;
+
+			Debug.Log ("3:" + move);
 			move.z = transform.position.z;
 
 			//transform.position = new Vector3 (h, v, transform.position.z);

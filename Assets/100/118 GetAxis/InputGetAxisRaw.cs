@@ -14,6 +14,7 @@ namespace GetAxisTest{
 		void Update () {
 			float h = Input.GetAxisRaw ("Horizontal") * range;	
 			float v = Input.GetAxisRaw ("Vertical") * range;
+			Debug.Log (h + ":" + v);
 
 			transform.position = new Vector3 (h, v, transform.position.z);
 		}
