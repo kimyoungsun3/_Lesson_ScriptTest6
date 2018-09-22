@@ -9,6 +9,8 @@ namespace ComponentTest{
 		public BoxCollider col;
 		public MeshRenderer render;
 		public Rigidbody rb;
+		public AnotherScripts scpAnother;
+
 
 		void Start () {
 			//유니티 기본 변수...
@@ -18,8 +20,8 @@ namespace ComponentTest{
 			Debug.Log ("trans:" + trans);
 
 			//유니티 기본 변수에서 현재는 GetComponet로 받아야함...
-			col = GetComponent<BoxCollider> ();		//col = collider;
-			render = GetComponent<MeshRenderer>();
+			col 	= GetComponent<BoxCollider> ();		//col = collider;
+			render 	= GetComponent<MeshRenderer>();
 			Debug.Log ("col:" + col);
 			Debug.Log ("render:" + render);
 
@@ -27,6 +29,9 @@ namespace ComponentTest{
 			rb = GetComponent<Rigidbody> ();
 			Debug.Log ("rb:" + rb);
 
+			//
+			scpAnother = GetComponent<AnotherScripts>();
+			scpAnother.InitData (11);
 		}
 	}
 }

@@ -8,6 +8,7 @@ namespace TranslateAndRotate{
 		public float moveSpeed = 2f;
 		void Start () {
 			Debug.Log ("ASDW is Move and Rotate/ move -> rotate");
+			Debug.Log ("회전 -> 이동과 이동을 하고 회전은 미묘한 차이가 발생한다.");
 		}
 
 		// Update is called once per frame
