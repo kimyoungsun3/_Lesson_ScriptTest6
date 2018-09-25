@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace ClassesTest{
 	public class PlayerModel : MonoBehaviour {
+		[System.Serializable]
 	    public class Stuff
 	    {
 	        public int bullets;
@@ -51,6 +52,8 @@ namespace ClassesTest{
 	            Rigidbody bulletInstance = Instantiate(bulletPrefab, firePosition.position, firePosition.rotation) as Rigidbody;
 	            bulletInstance.AddForce(firePosition.forward * bulletSpeed);
 	            myStuff.bullets--;
+
+				Destroy (bulletInstance.gameObject, 2f);
 	        }
 	    }
 	}

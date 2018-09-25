@@ -7,25 +7,16 @@ namespace InvokeTest{
 		public Transform prefab;
 
 		// Use this for initialization
-		IEnumerator Start () {
+		void Start () {
+			Debug.Log ("0. 시작, Invoke가동(11초뒤에)." + Time.time);
 			Invoke ("SpawnObject", 11f);
-
-			yield return new WaitForSeconds (5f);
-			Debug.Log ("Script disable");
-			enabled = false;
-
-			yield return new WaitForSeconds (5f);
-			Debug.Log ("GameObject not active");
-			gameObject.SetActive (false);	//-> Coroutine kill
-
-			yield return new WaitForSeconds (5f);
-			Debug.Log ("Invoke GameObject Destroy");
-			Destroy (gameObject);
 		}
 
 		void SpawnObject(){
-			Debug.Log ("Invoke Alive");
+			Debug.Log ("0. 등록된 Invoke실행:" + Time.time);
 			Instantiate (prefab, transform.position + Random.onUnitSphere, Quaternion.identity);
+
+			gameObject.SetActive (false);
 		}
 
 		public float time;

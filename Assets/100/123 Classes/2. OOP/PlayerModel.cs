@@ -13,16 +13,12 @@ namespace ClassesTest2{
 		void Start(){
 			controller = GetComponent<PlayerController> ();
 			shooting = GetComponent<PlayerShooting> ();
-		}
-	    
+		}	    
 	    
 	    void Update ()
 	    {
 			controller.Movement();
 			shooting.Shoot(myStuff);
 	    }
-	    
-	    
-	    
 	}
 }

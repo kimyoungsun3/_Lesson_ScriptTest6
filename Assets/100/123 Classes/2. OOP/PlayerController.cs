@@ -15,6 +15,5 @@ namespace ClassesTest2{
 			transform.Translate(Vector3.forward * forwardMovement);
 			transform.Rotate(Vector3.up * turnMovement);
 		}
-
 	}
 }

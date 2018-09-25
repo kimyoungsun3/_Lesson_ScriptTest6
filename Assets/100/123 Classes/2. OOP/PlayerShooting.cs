@@ -15,6 +15,8 @@ namespace ClassesTest2{
 				Rigidbody bulletInstance = Instantiate(bulletPrefab, firePosition.position, firePosition.rotation) as Rigidbody;
 				bulletInstance.AddForce(firePosition.forward * bulletSpeed);
 				_stuff.bullets--;
+
+				Destroy (bulletInstance.gameObject, 2f);
 			}
 		}
 	}

@@ -7,24 +7,14 @@ namespace InvokeTest{
 		public Transform prefab;
 
 		// Use this for initialization
-		IEnumerator Start () {
+		void Start () {
+			Debug.Log ("0. 시작, Invoke가동(2초뒤에 반복)." + Time.time);
 			InvokeRepeating ("SpawnObject", 2f, 2f);	
 
-			yield return new WaitForSeconds (5f);
-			Debug.Log ("Script disable");
-			enabled = false;
-
-			yield return new WaitForSeconds (5f);
-			Debug.Log ("GameObject not active");
-			gameObject.SetActive (false);	//-> Coroutine kill
-
-			yield return new WaitForSeconds (5f);
-			Debug.Log ("GameObject Destroy");
-			Destroy (gameObject);
 		}
 
 		void SpawnObject(){
-			Debug.Log ("InvokeRepeat Alive");
+			Debug.Log ("0. 등록된 InvokeRepeating실행:" + Time.time);
 			Instantiate (prefab, transform.position + Random.onUnitSphere, Quaternion.identity);
 		}
 
