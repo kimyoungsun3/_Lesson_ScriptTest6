@@ -11,8 +11,9 @@ namespace MouseClick2{
 		}
 
 		void Update(){
+			Ray _ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+			Debug.DrawRay (_ray.origin, _ray.direction * 100f, Color.blue);
 			if(Input.GetMouseButtonDown(0)){
-				Ray _ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 				RaycastHit _hit;
 
 				if(Physics.Raycast(_ray, out _hit, 100, mask)){

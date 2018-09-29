@@ -12,9 +12,12 @@ namespace InputTest{
 		
 		// Update is called once per frame
 		void Update () {
-			if (Input.GetKeyDown (KeyCode.A)) {
-				Debug.Log (this + " press a");
-			}
+
+			Debug.Log(
+				"A GetKeyDown:" + Input.GetKeyDown(KeyCode.A)
+				+ " GetKey:" + Input.GetKey(KeyCode.A)
+				+ " GetKey:" + Input.GetKeyUp(KeyCode.A)
+			);
 		}
 	}
 
