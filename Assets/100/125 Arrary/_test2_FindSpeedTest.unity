@@ -323,7 +323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ead9557a58823c499c7a10afa8885d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LOOP_MAX: 3000
+  LOOP_MAX: 2000
 --- !u!4 &788351603
 Transform:
   m_ObjectHideFlags: 0

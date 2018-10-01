@@ -12,11 +12,11 @@ namespace InstantiateTest{
 		
 		// Update is called once per frame
 		void Update () {
-			float forwardMovement = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
-			float turnMovement = Input.GetAxis("Horizontal") * turnSpeed * Time.deltaTime;
+			float _v = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
+			float _h = Input.GetAxis("Horizontal") * turnSpeed * Time.deltaTime;
 
-			transform.Translate(Vector3.forward * forwardMovement);
-			transform.Rotate(Vector3.up * turnMovement);
+			transform.Translate(Vector3.forward * _v);
+			transform.Rotate(Vector3.up * _h);
 
 			if (Input.GetMouseButtonDown (0)) {
 				GameObject _t = Instantiate (bulletPrefab, spawnPoint.position, spawnPoint.rotation) as GameObject;

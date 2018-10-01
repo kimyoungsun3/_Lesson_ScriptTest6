@@ -20,9 +20,9 @@ namespace GenerateTest{
 	}
 
 	public class FSM<T> : MonoBehaviour {
-		public T preState;
-		public T curState;
-		public T nextState;
+		[HideInInspector] public T preState;
+		[HideInInspector] public T curState;
+		[HideInInspector] public T nextState;
 		public VOID_FUN_VOID cbIn, cbLoop, cbOut;
 
 		public Dictionary<T, FSMData<T>> dicState = new Dictionary<T, FSMData<T>>();

@@ -19,13 +19,13 @@ public class LifeCycle : MonoBehaviour {
 
 	//------------------------
 	void FixedUpdate () {
-		Debug.Log (this + " FixedUpdate" );		
+		Debug.Log (this + " FixedUpdate" + Time.deltaTime );		
 	}
 	void Update () {
-		Debug.Log (this + " Update");		
+		Debug.Log (this + " Update"+ Time.deltaTime);		
 	}
 	void LateUpdate () {
-		Debug.Log (this + " LateUpdate");		
+		Debug.Log (this + " LateUpdate"+ Time.deltaTime);		
 	}
 
 	//------------------------

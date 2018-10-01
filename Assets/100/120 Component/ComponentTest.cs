@@ -10,6 +10,7 @@ namespace ComponentTest{
 		public MeshRenderer render;
 		public Rigidbody rb;
 		public AnotherScripts scpAnother;
+		public AnotherScripts scpAnother2;
 
 
 		void Start () {
@@ -31,7 +32,9 @@ namespace ComponentTest{
 
 			//
 			scpAnother = GetComponent<AnotherScripts>();
-			scpAnother.InitData (11);
+			if (scpAnother != null) {
+				scpAnother.InitData (11);
+			}
 		}
 	}
 }

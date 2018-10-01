@@ -6,9 +6,9 @@ public class WarBand : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		Humanoid human = new Humanoid ();
-		Enemy enemy = new Enemy ();
-		Orc orc = new Orc ();
+		Humanoid human 	= new Humanoid ();
+		Enemy enemy 	= new Enemy ();
+		Orc orc 		= new Orc ();
 
 		human.Yell ();	//human
 		enemy.Yell ();	//enemy
@@ -17,7 +17,7 @@ public class WarBand : MonoBehaviour {
 
 		Humanoid human2 = new Humanoid ();
 		Humanoid enemy2 = new Enemy ();
-		Humanoid orc2 = new Orc ();
+		Humanoid orc2 	= new Orc ();
 
 		human2.Yell ();	//human
 		enemy2.Yell ();	//human
