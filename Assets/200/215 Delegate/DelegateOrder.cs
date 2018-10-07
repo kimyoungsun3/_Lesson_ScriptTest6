@@ -2,45 +2,54 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public delegate void VOID_FUN_VOID2();
+namespace DelegateTest{
+	public class DelegateOrder : MonoBehaviour {
 
-public class DelegateOrder : MonoBehaviour {
+		void Start () {
+			VOID_FUN_VOID2 _cb;
 
-	void Start () {
-		VOID_FUN_VOID2 callback;
+			_cb  = OnFun1;
+			_cb += OnFun2;
+			_cb += OnFun3;
+			if (_cb != null) {
+				_cb ();
+			}
 
-		callback  = OnFun1;
-		callback += OnFun2;
-		callback += OnFun3;
-		if (callback != null) {
-			callback ();
+			_cb  = OnFun3;
+			_cb += OnFun2;
+			_cb += OnFun1;
+			if (_cb != null) {
+				_cb ();
+			}
+
+			_cb  = OnFun3;
+			_cb += OnFun2;
+			_cb += OnFun2;
+			_cb += OnFun2;
+			_cb += OnFun1;
+			if (_cb != null) {
+				_cb ();
+			}
+
+			_cb -= OnFun3;
+			_cb -= OnFun3;	//검색해서 내부에서 빼주는듯...
+			_cb -= OnFun2;
+			_cb -= OnFun2;
+			_cb -= OnFun2;
+			if (_cb != null) {
+				_cb ();
+			}
 		}
 
-		callback  = OnFun3;
-		callback += OnFun2;
-		callback += OnFun1;
-		if (callback != null) {
-			callback ();
+		void OnFun1(){
+			Debug.Log ("OnFun1");
 		}
-
-		callback  = OnFun3;
-		callback += OnFun2;
-		callback += OnFun2;
-		callback += OnFun2;
-		callback += OnFun1;
-		if (callback != null) {
-			callback ();
+		void OnFun2(){
+			Debug.Log ("OnFun2");
 		}
+		void OnFun3(){
+			Debug.Log ("OnFun3");
+		}
+		
 	}
-
-	void OnFun1(){
-		Debug.Log ("OnFun1");
-	}
-	void OnFun2(){
-		Debug.Log ("OnFun2");
-	}
-	void OnFun3(){
-		Debug.Log ("OnFun3");
-	}
-	
 }

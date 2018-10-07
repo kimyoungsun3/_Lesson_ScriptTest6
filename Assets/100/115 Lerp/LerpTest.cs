@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace Lerp{
-	[ExecuteInEditMode]
+	//[ExecuteInEditMode]
 	public class LerpTest : MonoBehaviour {
 		public float p1 = 0f;
 		public float p2 = 100f;

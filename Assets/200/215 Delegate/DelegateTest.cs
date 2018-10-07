@@ -2,35 +2,33 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DelegateTest : MonoBehaviour {
-	delegate void VOID_FUN_INT(int _x);
-	VOID_FUN_INT callbackFun;
+namespace DelegateTest{
+	public class DelegateTest : MonoBehaviour {
+		VOID_FUN_INT cbFun;
 
 
-	void Start () {
-		Debug.Log ("각각 처리");
-		callbackFun = PrintNum;
-		callbackFun (5);
+		void Start () {
+			Debug.Log ("각각 처리");
+			cbFun = OnPrintNum;
+			cbFun (5);
 
-		callbackFun = PrintNum2;
-		callbackFun (5);
+			cbFun = OnPrintNum2;
+			cbFun (5);
 
 
-		Debug.Log ("콜백한꺼번에 처리");
-		callbackFun = PrintNum;
-		callbackFun += PrintNum2;
-		callbackFun (5);
+			Debug.Log ("콜백한꺼번에 처리");
+			cbFun  = OnPrintNum;
+			cbFun += OnPrintNum2;
+			cbFun (5);
 
+		}
+
+		void OnPrintNum(int _x){
+			Debug.Log (_x);
+		}
+
+		void OnPrintNum2(int _x){
+			Debug.Log (_x * 2);
+		}
 	}
-
-
-	void PrintNum(int _x){
-		Debug.Log (_x);
-	}
-
-	void PrintNum2(int _x){
-		Debug.Log (_x * 2);
-	}
-
-
 }

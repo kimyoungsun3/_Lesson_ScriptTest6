@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace Inheritance{
 	public class CStep3 : CStep2 {
+		public CStep3(){
+			Debug.Log ("CStep3 Constructor");
+		}
 
 		public void f1(){
 			Debug.Log ("CStep3 f1()");
