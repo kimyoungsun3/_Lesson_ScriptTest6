@@ -6,8 +6,8 @@ public class CoroutineExample : MonoBehaviour {
 	public Transform target;
 	public float speed = 1f;
 
-	void Start () {
-		Debug.Log ("StartCoroutine");
+	public void SetTarget (Transform _target) {
+		target = _target;
 		StartCoroutine (CoReach (target));
 	}
 
@@ -21,5 +21,7 @@ public class CoroutineExample : MonoBehaviour {
 		Debug.Log("Reached the target");
 		yield return new WaitForSeconds(3f);
 		Debug.Log("Coroutine is finished.");
+
+		StartCoroutine (CoReach (_target));
 	}
 }

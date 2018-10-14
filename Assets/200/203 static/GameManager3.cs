@@ -12,7 +12,7 @@ namespace statictest{
 
 		void Update(){
 			if(Input.GetMouseButtonDown(0)){
-				EnemyManager3.ins.InvorkCreateEnemy ();
+				EnemyManager3.InvorkCreateEnemy ();
 			}
 		}
 

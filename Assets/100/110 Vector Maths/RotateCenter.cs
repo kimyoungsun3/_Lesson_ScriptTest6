@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace VectorMaths{
+namespace VectorTest{
 	public class RotateCenter : MonoBehaviour {
 		public Transform target;
 		public float rotateSpeed;

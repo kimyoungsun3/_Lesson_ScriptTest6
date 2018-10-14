@@ -36,6 +36,7 @@ namespace GenerateTest{
 		public void MoveState(T _nextState){
 			if(!dicState.ContainsKey(_nextState)){
 				Debug.LogError ("Not found State:" + _nextState);
+				return;
 			}
 
 			if (cbOut != null) {

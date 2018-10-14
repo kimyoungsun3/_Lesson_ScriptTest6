@@ -11,9 +11,14 @@ namespace statictest{
 			ins = this;
 		}
 
-		public void InvorkCreateEnemy(){
-			GameObject _go = Instantiate (enemyPrefab, transform.position + Random.onUnitSphere * 3f, Quaternion.identity);
-			_go.transform.SetParent (transform);
+		public static void InvorkCreateEnemy(){
+			GameObject _go = Instantiate (
+				ins.enemyPrefab, 
+				ins.transform.position + Random.onUnitSphere * 3f, 
+				Quaternion.identity
+			);
+
+			_go.transform.SetParent (ins.transform);
 		}
 
 	}

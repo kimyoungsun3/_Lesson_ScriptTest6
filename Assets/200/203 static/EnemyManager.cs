@@ -22,6 +22,5 @@ namespace statictest{
 
 			Debug.Log ("enemyCount:" + Enemy.enemyCount);
 		}
-
 	}
 }
