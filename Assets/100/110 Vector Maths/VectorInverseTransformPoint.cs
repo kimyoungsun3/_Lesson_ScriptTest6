@@ -19,8 +19,8 @@ namespace VectorTest{
 				//Gizmos.DrawLine (p1.position + Vector3.zero, p1.InverseTransformPoint(p2.position));
 
 				Gizmos.color = Color.blue;
-				Gizmos.DrawLine (Vector3.zero,                   p1.InverseTransformPoint(p2.position));
-				Gizmos.DrawLine (Vector3.zero, p1.TransformPoint(p1.InverseTransformPoint(p2.position)) - p1.position);
+				//Gizmos.DrawLine (Vector3.zero,                   p1.InverseTransformPoint(p2.position));
+				//Gizmos.DrawLine (Vector3.zero, p1.TransformPoint(p1.InverseTransformPoint(p2.position)) - p1.position);
 				Gizmos.DrawLine (p1.position + Vector3.zero, p1.TransformPoint(p1.InverseTransformPoint(p2.position)));
 			}
 		}

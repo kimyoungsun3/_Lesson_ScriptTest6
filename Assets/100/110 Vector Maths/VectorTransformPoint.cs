@@ -14,7 +14,7 @@ namespace VectorTest{
 			if (p1 != null && p2 != null) {
 				Gizmos.color = Color.red;
 				Gizmos.DrawLine (Vector3.zero, p1.position);
-				Gizmos.DrawLine (p2.position + Vector3.zero, p1.TransformPoint(p2.position));
+				//Gizmos.DrawLine (p2.position + Vector3.zero, p1.TransformPoint(p2.position));
 
 				Gizmos.color = Color.green;
 				Gizmos.DrawLine (Vector3.zero, p2.position);
