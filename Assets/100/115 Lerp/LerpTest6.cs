@@ -14,7 +14,7 @@ namespace Lerp{
 		void Update () {
 
 			if (Input.GetMouseButtonDown (0)) {
-				nextPos 		= transform.position - transform.forward * knockBackMeter;
+				nextPos 		= transform.position + transform.forward * knockBackMeter;
 				speedKnock 	= 1f / knockTime;
 			}
 

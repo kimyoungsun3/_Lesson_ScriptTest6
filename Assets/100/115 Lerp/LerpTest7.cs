@@ -9,6 +9,8 @@ namespace Lerp{
 		float speedKnock;
 		Vector3 nextPos;
 		float powerTime = 0f;
+		public Vector2 knockMinMax = new Vector2(1f, 10f);
+		public int mode = 0;
 
 		void Update () {
 			if (Input.GetMouseButtonDown (0)) {
@@ -16,15 +18,25 @@ namespace Lerp{
 			} else if (Input.GetMouseButton (0)) {
 				powerTime += Time.deltaTime;
 			} else if (Input.GetMouseButtonUp (0)) {
-				nextPos 		= transform.position - transform.forward * powerTime* knockBackUnit;
+				//Debug.Log (powerTime);
+				powerTime 	= Mathf.Clamp (powerTime, knockMinMax.x, knockMinMax.y);
+				//Debug.Log ("> " + powerTime);
+				nextPos 	= transform.position - transform.forward * powerTime* knockBackUnit;
 				speedKnock 	= 1f / knockTime;
 			}
 
-			transform.position = Vector3.Lerp(
-				transform.position, 
-				nextPos, 
-				speedKnock * Time.deltaTime
-			);
+			if(mode == 0)
+				transform.position = Vector3.Lerp(
+					transform.position, 
+					nextPos, 
+					speedKnock * Time.deltaTime
+				);
+			else
+				transform.position = Vector3.Slerp(
+					transform.position, 
+					nextPos, 
+					speedKnock * Time.deltaTime
+				);
 		}
 	}
 }

@@ -29,7 +29,7 @@ namespace Lerp{
 		}
 
 		IEnumerator Co_KnockBack(){
-			while (Vector3.Distance (transform.position, nextPos) >= 0.01) {
+			while (Vector3.Distance (transform.position, nextPos) >= 0.01f) {
 				transform.position = Vector3.Lerp (
 					transform.position, 
 					nextPos, 
