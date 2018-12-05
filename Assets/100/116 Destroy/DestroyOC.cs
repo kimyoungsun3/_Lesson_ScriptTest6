@@ -19,8 +19,9 @@ namespace Destroy{
 				Destroy (GetComponent<Collider> ());
 			} else if (Input.GetKeyDown (KeyCode.D)) {
 				Destroy (gameObject, 3f);
-			}
-			
+				//Destroy (gameObject);
+				DestroyImmediate(gameObject);
+			}			
 		}
 	}
 }
