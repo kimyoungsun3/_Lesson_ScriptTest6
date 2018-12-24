@@ -13,6 +13,8 @@ public class SpinWithMouse : MonoBehaviour
 		mTrans = transform;
 	}
 
+
+
 	void OnDrag (Vector2 delta)
 	{
 		UICamera.currentTouch.clickNotification = UICamera.ClickNotification.None;
