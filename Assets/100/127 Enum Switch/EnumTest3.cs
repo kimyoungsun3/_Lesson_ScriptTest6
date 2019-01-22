@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace EnumTest3Block{
+namespace EnumTest3
+{
 	public enum ENUM_EQUIPMENT_PART { Hair, Chest, Legs, Toes, Arms };
 	public class EnumTest3 : MonoBehaviour {
 		//public ENUM_EQUIPMENT_PART[] partsc; 
@@ -14,13 +15,13 @@ namespace EnumTest3Block{
 		//    이와같이 된다.... 음......
 		//    결론 > 초기 사이즈를 [0]으로 설정해서 사용하자....
 
-		public ENUM_EQUIPMENT_PART[] partsc = new ENUM_EQUIPMENT_PART[0];
+		public ENUM_EQUIPMENT_PART[] parts1 = new ENUM_EQUIPMENT_PART[0];
 		public ENUM_EQUIPMENT_PART[] parts2 = new ENUM_EQUIPMENT_PART[0];
 		public ENUM_EQUIPMENT_PART[] parts3 = new ENUM_EQUIPMENT_PART[0];
 
 		void Start(){
-			foreach (ENUM_EQUIPMENT_PART _part in partsc) {
-				Debug.Log ("partz -> " + _part); 
+			foreach (ENUM_EQUIPMENT_PART _part in parts1) {
+				Debug.Log ("part1 -> " + _part); 
 			}
 
 			foreach (ENUM_EQUIPMENT_PART _part in parts2) {

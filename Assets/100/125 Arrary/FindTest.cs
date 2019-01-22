@@ -24,16 +24,26 @@ namespace ArraryTest{
 
 
 			Debug.Log ("=========================");
-			Debug.Log ("FunSingleTone :" 			+ (t [1] - t [0]));
-			Debug.Log ("FunSingleTone2 :" 			+ (t [2] - t [1]));
-			Debug.Log ("FindGameObjectWithTag :" 	+ (t [3] - t [2]));
-			Debug.Log ("FunFind :" 					+ (t [4] - t [3]));
+			Debug.Log ("FunSingleTone(.gameObject) :" 	+ (t [1] - t [0]));
+			Debug.Log ("FunSingleTone2(.go) :" 			+ (t [2] - t [1]));
+			Debug.Log ("FindGameObjectWithTag :" 		+ (t [3] - t [2]));
+			Debug.Log ("FunFind(GameObject.Find) :" 	+ (t [4] - t [3]));
 			Debug.Log ("FunFindObjectOfType :" 		+ (t [5] - t [4]));
 		}
 
-		void FunFind(){
-			for (int i = 0; i < LOOP_MAX; i++) {
-				player = GameObject.Find ("Player");
+		void FunSingleTone()
+		{
+			for (int i = 0; i < LOOP_MAX; i++)
+			{
+				player = Player.ins.gameObject;
+			}
+		}
+
+		void FunSingleTone2()
+		{
+			for (int i = 0; i < LOOP_MAX; i++)
+			{
+				player = Player.ins.go;
 			}
 		}
 
@@ -43,21 +53,17 @@ namespace ArraryTest{
 			}
 		}
 
+		void FunFind()
+		{
+			for (int i = 0; i < LOOP_MAX; i++)
+			{
+				player = GameObject.Find("Player");
+			}
+		}
+
 		void FunFindObjectOfType(){
 			for (int i = 0; i < LOOP_MAX; i++) {
 				player = (GameObject)GameObject.FindObjectOfType (typeof(GameObject));
-			}
-		}
-
-		void FunSingleTone(){
-			for (int i = 0; i < LOOP_MAX; i++) {
-				player = Player.ins.gameObject;
-			}
-		}
-
-		void FunSingleTone2(){
-			for (int i = 0; i < LOOP_MAX; i++) {
-				player = Player.ins.go;
 			}
 		}
 	}
