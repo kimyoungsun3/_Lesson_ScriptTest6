@@ -6,5 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: "Assets/100/140_ItemChange/_test1_\uC7A5\uBE44\uAD50\uCCB4.unity"
-    guid: 53852552bad977243b8711edce9655c7
+    path: Assets/200/216 ScriptableObject/_test1_DataTest1.unity
+    guid: eef0b66ade0835541b8f78fb3fb242c0
+  - enabled: 1
+    path: Assets/200/216 ScriptableObject/_test1_DataTest2.unity
+    guid: 60356d3f65aa81542a4ad9078adb8b0b
+  - enabled: 1
+    path: Assets/200/216 ScriptableObject/_test1_DataTest3.unity
+    guid: 894d093585b51b54cb7bfac17cbe0a99
