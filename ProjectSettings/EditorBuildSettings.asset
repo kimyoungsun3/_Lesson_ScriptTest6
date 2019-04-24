@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/400/401_AddExplosionTest/_test1.unity
+    guid: 909bf59091c59c84e8a88c686c1191be
+  - enabled: 1
     path: Assets/200/216 ScriptableObject/_test1_DataTest1.unity
     guid: eef0b66ade0835541b8f78fb3fb242c0
   - enabled: 1
@@ -14,3 +17,48 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/200/216 ScriptableObject/_test1_DataTest3.unity
     guid: 894d093585b51b54cb7bfac17cbe0a99
+  - enabled: 1
+    path: Assets/400/402_SceneLoader/SceneTest1 LoadLevel/scene1_1.unity
+    guid: ddb010c39617e2d4ba68e3e432c4d337
+  - enabled: 1
+    path: Assets/400/402_SceneLoader/SceneTest1 LoadLevel/scene1_2.unity
+    guid: 82e8ac687fc4bf74586efc7339eebb25
+  - enabled: 1
+    path: Assets/400/402_SceneLoader/SceneTest1 LoadLevel/scene1_3.unity
+    guid: 91e681214af83544a8ece8749f830bb8
+  - enabled: 1
+    path: Assets/400/402_SceneLoader/SceneTest3_Async/scene3_1.unity
+    guid: c3fe3ac62d7f8c944b26777c5f8371c5
+  - enabled: 1
+    path: Assets/400/402_SceneLoader/SceneTest3_Async/scene3_2.unity
+    guid: 11f6b733fb562f640a13f2eee14b5bc4
+  - enabled: 1
+    path: Assets/400/402_SceneLoader/SceneTest3_Async/scene3_3.unity
+    guid: c28739562e1d72547b9c8dacd6226d09
+  - enabled: 1
+    path: Assets/400/402_SceneLoader/SceneTest3_Async/scene3_master.unity
+    guid: b6955424cf09e5844b04fe1dcabe1d9b
+  - enabled: 1
+    path: Assets/400/402_SceneLoader/SceneTest2_LoadLevelAdditive/scene2_1.unity
+    guid: bed420fac551f7b4e9b6e269e05a4196
+  - enabled: 1
+    path: Assets/400/402_SceneLoader/SceneTest2_LoadLevelAdditive/scene2_2.unity
+    guid: e45402dd2fd02eb468d6751575c8138e
+  - enabled: 1
+    path: Assets/400/402_SceneLoader/SceneTest2_LoadLevelAdditive/scene2_3.unity
+    guid: a1a8617d6538c6e46be52e7e9736d77a
+  - enabled: 1
+    path: Assets/400/402_SceneLoader/SceneTest2_LoadLevelAdditive/scene2_master.unity
+    guid: 7680443a129243d44bc72114bb3212ae
+  - enabled: 1
+    path: Assets/400/403_SceneManager/SceneManager_Addtive/SceneManager.unity
+    guid: 727f72fde8b79d1419fe4d0e186e75fb
+  - enabled: 1
+    path: Assets/400/403_SceneManager/SceneManager_Addtive/SM_1.unity
+    guid: 5be0bd688e55f9c459474743fa8052ce
+  - enabled: 1
+    path: Assets/400/403_SceneManager/SceneManager_Addtive/SM_2.unity
+    guid: 369ec4f6c945e9f4a92ad5f06ae0c199
+  - enabled: 1
+    path: Assets/400/403_SceneManager/SceneManager_Addtive/SM_3.unity
+    guid: 6c7a1fe803a05234fb4efb60d57f43a0
