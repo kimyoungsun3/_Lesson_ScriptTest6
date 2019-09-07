@@ -8,6 +8,7 @@ namespace ScriptableObjectTest
 	public class ScriptData : ScriptableObject
 	{
 		public int idx = 0;
+		private int idx2 = 0;
 		public void Double()
 		{
 			idx *= 2;

@@ -57,6 +57,9 @@ EditorBuildSettings:
     path: Assets/400/403_SceneManager/SceneManager_Addtive/SM_1.unity
     guid: 5be0bd688e55f9c459474743fa8052ce
   - enabled: 1
+    path: Assets/400/403_SceneManager/SM_1.unity
+    guid: 827ce635217417241be20336ab80f801
+  - enabled: 1
     path: Assets/400/403_SceneManager/SceneManager_Addtive/SM_2.unity
     guid: 369ec4f6c945e9f4a92ad5f06ae0c199
   - enabled: 1
