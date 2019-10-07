@@ -6,38 +6,42 @@ namespace DelegateTest{
 	public class DelegateOrder : MonoBehaviour {
 
 		void Start () {
-			VOID_FUN_VOID2 _cb;
+			VOID_FUN_VOID2 _on;
 
-			_cb  = OnFun1;
-			_cb += OnFun2;
-			_cb += OnFun3;
-			if (_cb != null) {
-				_cb ();
+			_on  = OnFun1;
+			_on += OnFun2;
+			_on += OnFun3;
+			Debug.Log("*** 1-2-3 ***");
+			if (_on != null) {
+				_on ();
 			}
 
-			_cb  = OnFun3;
-			_cb += OnFun2;
-			_cb += OnFun1;
-			if (_cb != null) {
-				_cb ();
+			_on  = OnFun3;
+			_on += OnFun2;
+			_on += OnFun1;
+			Debug.Log("*** 3-2-1 ***");
+			if (_on != null) {
+				_on ();
 			}
 
-			_cb  = OnFun3;
-			_cb += OnFun2;
-			_cb += OnFun2;
-			_cb += OnFun2;
-			_cb += OnFun1;
-			if (_cb != null) {
-				_cb ();
+			_on  = OnFun3;
+			_on += OnFun2;
+			_on += OnFun2;
+			_on += OnFun2;
+			_on += OnFun1;
+			Debug.Log("*** 3-222-1 ***");
+			if (_on != null) {
+				_on ();
 			}
 
-			_cb -= OnFun3;
-			_cb -= OnFun3;	//검색해서 내부에서 빼주는듯...
-			_cb -= OnFun2;
-			_cb -= OnFun2;
-			_cb -= OnFun2;
-			if (_cb != null) {
-				_cb ();
+			_on -= OnFun3;
+			_on -= OnFun3;	//검색해서 내부에서 빼주는듯...
+			_on -= OnFun2;
+			_on -= OnFun2;
+			_on -= OnFun2;
+			Debug.Log("*** 3-222-1 <-33222 => 1***");
+			if (_on != null) {
+				_on ();
 			}
 		}
 

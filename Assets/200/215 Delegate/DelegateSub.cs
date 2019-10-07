@@ -6,7 +6,7 @@ namespace DelegateTest{
 	public class DelegateSub : MonoBehaviour {
 
 		void Start(){
-			DelegateMaster.ins.cbClick += OnClickDisplay;
+			DelegateMaster.ins.onClick += OnClickDisplay;
 		}
 
 		void OnClickDisplay(){

@@ -35,6 +35,10 @@ namespace EquipmentTest
 				//Exist -> Expire and New Create
 				Debug.Log(" Item is Exists and Expire and new Item");
 			}
+			else
+			{
+				Debug.Log(" Item is Insert");
+			}
 
 			//New Create
 			currentEquipment[_partIdx] = _newItem;

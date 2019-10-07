@@ -10,7 +10,7 @@ public class PopouSub : MonoBehaviour {
 			gameObject.SetActive (false);
 		}
 
-		public void SetData(VOID_FUN_VOID _cb){
+		public void SetCallback(VOID_FUN_VOID _cb){
 			gameObject.SetActive (true);
 			cb = _cb;
 		}

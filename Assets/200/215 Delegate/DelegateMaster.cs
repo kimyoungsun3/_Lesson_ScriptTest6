@@ -5,7 +5,7 @@ using UnityEngine;
 namespace DelegateTest{
 	public class DelegateMaster : MonoBehaviour {
 		public static DelegateMaster ins;
-		public VOID_FUN_VOID cbClick;
+		public VOID_FUN_VOID onClick;
 
 		void Awake(){
 			ins = this;
@@ -17,8 +17,8 @@ namespace DelegateTest{
 
 		void Update () {
 			if (Input.GetMouseButtonDown (0)) {
-				if (cbClick != null) {
-					cbClick ();
+				if (onClick != null) {
+					onClick ();
 				}
 			}
 		}

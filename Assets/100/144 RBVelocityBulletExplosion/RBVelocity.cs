@@ -17,9 +17,12 @@ namespace RBVelocityTest
 
 			posOrigin = transform.position;
 			rotOrigin = transform.rotation;
+
+			beforePos = transform.position;
+			Debug.Log(rotOrigin);
 		}
 
-		// Update is called once per frame
+		Vector3 beforePos;
 		void Update()
 		{
 			if (Input.GetMouseButtonDown(0))
@@ -30,9 +33,18 @@ namespace RBVelocityTest
 			else if (Input.GetMouseButtonDown(1))
 			{
 				rb.isKinematic = true;
-				transform.position = posOrigin;
 				transform.rotation = rotOrigin;
+				transform.position = posOrigin;
+				Debug.Log(rotOrigin);
 			}
+
+			//해당 방향으로 바라보기...
+			Vector3 _dir = transform.position - beforePos;
+			if(_dir != Vector3.zero)
+			{
+				transform.rotation = Quaternion.FromToRotation(Vector3.forward, _dir);
+			}
+			beforePos = transform.position;
 		}
 	}
 
