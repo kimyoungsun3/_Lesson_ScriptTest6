@@ -25,6 +25,7 @@ namespace ValueAndReference{
 			_q2 = _q1 * Quaternion.Euler(Vector3.up * 90);
 			Debug.Log (_q1 + " , " + _q2);
 
+			Debug.Log("--- Value Type Ray ---");
 			Ray _ray = new Ray ();
 			_ray.origin = Vector3.one;
 			_ray.direction = Vector3.one;

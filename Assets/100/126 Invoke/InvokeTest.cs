@@ -12,12 +12,18 @@ namespace InvokeTest{
 			Invoke ("SpawnObject", 11f);
 		}
 
+		//private void OnDisable()
+		//{
+		//	CancelInvoke("SpawnObject");
+		//}
+
 		void SpawnObject(){
 			Debug.Log ("0. 등록된 Invoke실행:" + Time.time);
 			Instantiate (prefab, transform.position + Random.onUnitSphere, Quaternion.identity);
 
 			gameObject.SetActive (false);
 		}
+
 
 		public float time;
 		void Update(){

@@ -10,17 +10,20 @@ namespace LifeCycleTest
 		void Awake()
 		{
 			Debug.Log(this + " Awake");
+			StartCoroutine(Co_Awake());
 		}
+
 		void OnEnable()
 		{
 			Debug.Log(this + " OnEnable");
+			StartCoroutine(Co_OnEnable());
 		}
 
 		//-----------------------
 		void Start()
 		{
 			Debug.Log(this + " Start");
-			StartCoroutine(Co_XXX());
+			StartCoroutine(Co_Start());
 		}
 
 		//------------------------
@@ -37,11 +40,29 @@ namespace LifeCycleTest
 			Debug.Log(this + " LateUpdate");
 		}
 
-		IEnumerator Co_XXX()
+		IEnumerator Co_Awake()
 		{
 			while (true)
 			{
-				Debug.Log(this + " Co_XXX");
+				Debug.Log(this + " Co_Awake");
+				yield return null;
+			}
+		}
+
+		IEnumerator Co_Start()
+		{
+			while (true)
+			{
+				Debug.Log(this + " Co_Start");
+				yield return null;
+			}
+		}
+
+		IEnumerator Co_OnEnable()
+		{
+			while (true)
+			{
+				Debug.Log(this + " Co_OnEnable");
 				yield return null;
 			}
 		}

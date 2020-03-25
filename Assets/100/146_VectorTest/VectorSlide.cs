@@ -18,7 +18,7 @@ namespace _146_VectorTest
 				Gizmos.color = Color.red;
 				Gizmos.DrawLine(p1.position, _hit.point);
 				Vector3 _dir	= _hit.point - p1.position;
-				Vector3 _normal = _hit.normal;
+				Vector3 _normal = _hit.normal*2;
 				Vector3 _project = Project(-_dir, _normal);
 				Gizmos.color = Color.blue;
 				Gizmos.DrawLine(_hit.point, _hit.point + _project);
@@ -27,7 +27,7 @@ namespace _146_VectorTest
 				Gizmos.color = Color.green;
 				Gizmos.DrawLine(_hit.point + _project, _hit.point + _project + _projectH);
 
-				Vector3 _reflect = Reflect(_dir, _normal);
+				Vector3 _reflect = Reflect(_dir, _normal.normalized);
 				Gizmos.color = Color.gray;
 				Gizmos.DrawLine(_hit.point, _hit.point + _reflect);
 			}

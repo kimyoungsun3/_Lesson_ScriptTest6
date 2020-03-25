@@ -5,7 +5,7 @@ using UnityEngine;
 namespace DelegateTest{
 	public class DelegateTest : MonoBehaviour {
 		VOID_FUN_INT onFun;
-		VOID_FUN_INT onFun2;
+		VOID_FUN_INT onFun2, onFun3;
 
 		void Start () {
 			Debug.Log ("--각각 처리--");
@@ -25,6 +25,12 @@ namespace DelegateTest{
 			onFun2 = onFun;
 			if (onFun2 != null)
 				onFun2(11);
+
+			onFun = null;
+			onFun2(12);
+			onFun3 = onFun2;
+			onFun3(13);
+
 
 		}
 

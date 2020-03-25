@@ -10,8 +10,8 @@ namespace SeeOfView{
 		
 		// Update is called once per frame
 		void Update () {
-			float _h = Input.GetAxis ("Horizontal");
-			float _v = Input.GetAxis ("Vertical");
+			float _h = Input.GetAxisRaw ("Horizontal");
+			float _v = Input.GetAxisRaw("Vertical");
 
 			if (_v != 0) {
 				transform.Translate (_v * Vector3.forward * moveSpeed * Time.deltaTime);

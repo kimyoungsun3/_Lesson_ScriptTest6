@@ -30,5 +30,9 @@ public class QTest : MonoBehaviour {
 		} else if (Input.GetKey (KeyCode.Alpha8)) {
 			target.rotation = Quaternion.FromToRotation (-transform.right, Vector3.right);
 		}
+		else if (Input.GetKey(KeyCode.Alpha0))
+		{
+			transform.rotation = Quaternion.identity;
+		}
 	}
 }

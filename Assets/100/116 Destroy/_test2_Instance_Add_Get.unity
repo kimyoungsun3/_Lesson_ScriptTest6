@@ -141,6 +141,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goPrefab: {fileID: 1275224322755352, guid: 7d67609e74cc75749976ff45f4226d11, type: 2}
+  transPrefab: {fileID: 4407830418892020, guid: 7d67609e74cc75749976ff45f4226d11,
+    type: 2}
+  colPrefab: {fileID: 65452943333120442, guid: 7d67609e74cc75749976ff45f4226d11, type: 2}
+  rbPrefab: {fileID: 54099795027612890, guid: 95485ce862a2bba45b46605385756c7e, type: 2}
+  scpPrefab: {fileID: 114288530013419734, guid: 95485ce862a2bba45b46605385756c7e,
+    type: 2}
 --- !u!4 &30652024
 Transform:
   m_ObjectHideFlags: 0

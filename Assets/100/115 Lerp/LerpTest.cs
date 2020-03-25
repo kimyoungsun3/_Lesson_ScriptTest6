@@ -9,7 +9,8 @@ namespace Lerp{
 		public float p2 = 100f;
 		[Range(0, 1)] public float interpolate = .5f;
 
-		void Update () {
+		private void OnDrawGizmos()
+		{
 			float _value = Mathf.Lerp(p1, p2, interpolate);
 
 			Debug.Log (p1 + " ~ " + _value +"("+interpolate+")  ~ " + p2);

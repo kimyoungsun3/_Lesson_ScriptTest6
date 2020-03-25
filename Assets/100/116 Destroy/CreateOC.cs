@@ -9,7 +9,7 @@ namespace Destroy{
 		public Collider colPrefab;
 		public Rigidbody rbPrefab;
 		public XXXX scpPrefab;
-		public DestroyOC scpPrefab2;
+		//public DestroyOC scpPrefab2;
 
 		GameObject goTarget;
 

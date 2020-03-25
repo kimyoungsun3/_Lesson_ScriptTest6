@@ -20,6 +20,8 @@ namespace ArraryTest{
 			t [4] = Time.realtimeSinceStartup;
 			FunFindObjectOfType ();
 			t [5] = Time.realtimeSinceStartup;
+			FunGetComponent();
+			t[6] = Time.realtimeSinceStartup;
 
 
 
@@ -28,7 +30,16 @@ namespace ArraryTest{
 			Debug.Log ("FunSingleTone2(.go) :" 			+ (t [2] - t [1]));
 			Debug.Log ("FindGameObjectWithTag :" 		+ (t [3] - t [2]));
 			Debug.Log ("FunFind(GameObject.Find) :" 	+ (t [4] - t [3]));
-			Debug.Log ("FunFindObjectOfType :" 		+ (t [5] - t [4]));
+			Debug.Log ("FunFindObjectOfType :" 			+ (t [5] - t [4]));
+			Debug.Log("FunGetComponent :"				+ (t[6] - t[5]));
+
+			//FunSingleTone2(.go) :			0.0002171993
+			//FunSingleTone(.gameObject) :	0.0005135536
+			//FunFind(GameObject.Find) :	0.001018286
+			//FindGameObjectWithTag:		0.001262665
+			//FunGetComponent(GetComponent):0.001350403
+			//FunFindObjectOfType(typeof):	0.855422
+
 		}
 
 		void FunSingleTone()
@@ -64,6 +75,15 @@ namespace ArraryTest{
 		void FunFindObjectOfType(){
 			for (int i = 0; i < LOOP_MAX; i++) {
 				player = (GameObject)GameObject.FindObjectOfType (typeof(GameObject));
+			}
+		}
+
+		void FunGetComponent()
+		{
+			Rigidbody _rb;
+			for (int i = 0; i < LOOP_MAX; i++)
+			{
+				_rb = GetComponent<Rigidbody>();
 			}
 		}
 	}

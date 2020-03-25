@@ -10,7 +10,7 @@ namespace InstantiateTest{
 			if (_scp != null) {
 				_scp.TakeDamage (10f);
 			}
-			Destroy (gameObject);
+			//Destroy (gameObject);
 		}
 	}
 }

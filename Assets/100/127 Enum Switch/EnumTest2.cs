@@ -4,13 +4,13 @@ using UnityEngine;
 
 namespace EnumTest
 {
-	public enum ENUM_EQUIPMENT_PART {
+	public enum eEquipmentPart {
 		Hair, Chest, Legs, Toes, Arms
 	};
 
 	public class EnumTest2 : MonoBehaviour {
 		//[SerializeField]
-		public ENUM_EQUIPMENT_PART[] parts = new ENUM_EQUIPMENT_PART[0];
+		public eEquipmentPart[] parts = new eEquipmentPart[0];
 
 		// Use this for initialization
 		//void Start () {

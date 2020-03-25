@@ -20,10 +20,9 @@ namespace InstantiateTest{
 
 			if (Input.GetMouseButtonDown (0)) {
 				GameObject _t = Instantiate (bulletPrefab, spawnPoint.position, spawnPoint.rotation) as GameObject;
-				Rigidbody _rb = _t.GetComponent<Rigidbody> (); 
+				Rigidbody _rb = _t.GetComponent<Rigidbody> ();
 				_rb.AddForce (_t.transform.forward * 500);
-
-				Destroy (_t.gameObject, 2f);
+				Destroy (_t, 2f);
 			}
 		}
 	}

@@ -25,13 +25,13 @@ namespace _146_VectorTest
 			text.text = "Clamp:" + radius;
 		}
 
-		Vector3 ClampMagnitude(Vector3 _v, float _radius)
+		Vector3 ClampMagnitude(Vector3 _dir, float _radius)
 		{
-			_v = (_v.sqrMagnitude <= _radius * _radius
-				? _v
-				: _v.normalized * _radius);
+			_dir = (_dir.sqrMagnitude <= _radius * _radius
+				? _dir
+				: _dir.normalized * _radius);
 
-			return _v;
+			return _dir;
 		}
 	}
 }

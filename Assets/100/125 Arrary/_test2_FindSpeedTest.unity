@@ -305,6 +305,7 @@ GameObject:
   m_Component:
   - component: {fileID: 788351603}
   - component: {fileID: 788351602}
+  - component: {fileID: 788351604}
   m_Layer: 0
   m_Name: FindTest
   m_TagString: Untagged
@@ -323,7 +324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ead9557a58823c499c7a10afa8885d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LOOP_MAX: 2000
+  LOOP_MAX: 5000
 --- !u!4 &788351603
 Transform:
   m_ObjectHideFlags: 0
@@ -337,6 +338,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &788351604
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 788351601}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &811837178
 GameObject:
   m_ObjectHideFlags: 0

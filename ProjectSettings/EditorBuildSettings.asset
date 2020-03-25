@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/100/150_ApplicationTest/_test1.unity
+    guid: 6d00e06d2ce69714aa0e411a5cb613e3
+  - enabled: 1
     path: Assets/400/401_AddExplosionTest/_test1.unity
     guid: 909bf59091c59c84e8a88c686c1191be
   - enabled: 1

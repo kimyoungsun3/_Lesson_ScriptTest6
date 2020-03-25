@@ -20,7 +20,7 @@ namespace ClassesTest{
 	    }
 	    
 	    
-	    public Stuff myStuff = new Stuff(10, 7, 25);
+	    public Stuff myData = new Stuff(10, 7, 25);
 	    public float speed;
 	    public float turnSpeed;
 	    public Rigidbody bulletPrefab;
@@ -37,23 +37,23 @@ namespace ClassesTest{
 	    
 	    void Movement ()
 	    {
-	        float forwardMovement = Input.GetAxis("Vertical") * speed * Time.deltaTime;
-	        float turnMovement = Input.GetAxis("Horizontal") * turnSpeed * Time.deltaTime;
+	        float _v	= Input.GetAxis("Vertical") ;
+	        float _h		= Input.GetAxis("Horizontal") ;
 	        
-	        transform.Translate(Vector3.forward * forwardMovement);
-	        transform.Rotate(Vector3.up * turnMovement);
+	        transform.Translate(Vector3.forward * _v * speed * Time.deltaTime);
+	        transform.Rotate(Vector3.up * _h * turnSpeed * Time.deltaTime);
 	    }
 	    
 	    
 	    void Shoot ()
 	    {
-	        if(Input.GetButtonDown("Fire1") && myStuff.bullets > 0)
+	        if(Input.GetButtonDown("Fire1") && myData.bullets > 0)
 	        {
-	            Rigidbody bulletInstance = Instantiate(bulletPrefab, firePosition.position, firePosition.rotation) as Rigidbody;
-	            bulletInstance.AddForce(firePosition.forward * bulletSpeed);
-	            myStuff.bullets--;
+	            Rigidbody _rb = Instantiate(bulletPrefab, firePosition.position, firePosition.rotation) as Rigidbody;
+	            _rb.AddForce(firePosition.forward * bulletSpeed);
+	            myData.bullets--;
 
-				Destroy (bulletInstance.gameObject, 2f);
+				Destroy (_rb.gameObject, 2f);
 	        }
 	    }
 	}

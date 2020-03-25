@@ -145,7 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   p1: 0
   p2: 100
-  interpolate: 0
+  interpolate: 0.569
 --- !u!23 &298353388
 MeshRenderer:
   m_ObjectHideFlags: 0

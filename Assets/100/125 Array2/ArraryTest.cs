@@ -14,7 +14,9 @@ namespace Array2Test
 
 	public class ArraryTest : MonoBehaviour
 	{
-		public AAA[] array; 
+		public AAA[] array;
+
+		void OnEnable() { Debug.Log("OnEnable:" + array[0] + ":" + array.Length); }
 
 		void Start()
 		{
@@ -23,7 +25,6 @@ namespace Array2Test
 		}
 
 		//Error
-		void OnEnable()		{ Debug.Log("OnEnable:" + array[0] + ":" + array.Length); }
 		void OnDisable()	{ Debug.Log("OnDisable:" + array[0] + ":" + array.Length); }
 		void FixedUpdate()	{ Debug.Log("FixedUpdate:" + array[0] + ":" + array.Length); }
 		void Update()		{ Debug.Log("Update:" + array[0] + ":" + array.Length); }

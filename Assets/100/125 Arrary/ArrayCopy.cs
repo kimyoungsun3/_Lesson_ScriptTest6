@@ -7,9 +7,10 @@ namespace ArrayTest
 {
 	public class ArrayCopy : MonoBehaviour
 	{
-		public byte[] buffer = new byte[8];
-		public byte[] buffer2 = new byte[8];
-		
+		public byte[] buffer	= new byte[8];
+		public byte[] buffer2	= new byte[8];
+		public byte[] buffer3	= new byte[8];
+
 		// Use this for initialization
 		void Start()
 		{
@@ -19,6 +20,7 @@ namespace ArrayTest
 			}
 
 			Array.Copy(buffer, 0, buffer2, 2, 4);
+			Buffer.BlockCopy(buffer, 0, buffer3, 2, 4);
 
 
 

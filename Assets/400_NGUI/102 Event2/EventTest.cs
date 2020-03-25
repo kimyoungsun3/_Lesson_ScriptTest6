@@ -12,7 +12,7 @@ public class EventTest : MonoBehaviour {
 			GetComponent<Renderer> ().material.color = Color.green;
 		}
 	}
-	*/
+	*/ 
 	Material mat;
 	Color colorOrginal;
 	void Start(){
