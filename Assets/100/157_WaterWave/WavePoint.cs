@@ -6,23 +6,25 @@ namespace WaterWave
 {
 	public class WavePoint : MonoBehaviour
 	{
-		Vector3 startPos, pos;
 		Transform trans;
-		// Use this for initialization
-		void Start()
+		Vector3 startPos, pos;
+		[SerializeField] float height, interval;
+
+		private void Start()
 		{
 			trans		= transform;
 			startPos	= trans.position;
 		}
 
-		// Update is called once per frame
-		void Update()
+		private void Update()
 		{
-			float _theta	= startPos.x + Time.time;
+			float _theta = startPos.x + Time.time * interval;
 			float _dx = Mathf.Cos(_theta);
-			float _dy = Mathf.Sin(_theta);
+			float _dy = Mathf.Sin(_theta) * height;
 			pos.Set(startPos.x + _dx, startPos.y + _dy, startPos.z);
 			trans.position = pos;
 		}
+
+
 	}
 }
