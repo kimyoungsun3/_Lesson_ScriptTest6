@@ -248,7 +248,7 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: a30f933bed2f6504bae572c0ef6aaeb7, type: 3}
   mFont: {fileID: 0}
-  mText: "cross:(0.0, 1.0, 0.0)\n dot:1"
+  mText: "cross:(0.0, -0.9, 0.0)\n dot:-1"
   mFontSize: 50
   mFontStyle: 1
   mAlignment: 0
@@ -610,6 +610,7 @@ GameObject:
   - component: {fileID: 2100896455}
   - component: {fileID: 2100896454}
   - component: {fileID: 2100896453}
+  - component: {fileID: 2100896457}
   m_Layer: 0
   m_Name: Target
   m_TagString: Untagged
@@ -676,13 +677,26 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2100896452}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: 0.9918768, z: -0, w: 0.12720254}
+  m_LocalPosition: {x: -0.89183635, y: 0, z: -0.45235348}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2100896457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2100896452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae14f95cd988ffe4e9f17d0331a6e5c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1379208995}
+  bPause: 0
 --- !u!1 &2109250599
 GameObject:
   m_ObjectHideFlags: 0

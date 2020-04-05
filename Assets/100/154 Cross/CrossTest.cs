@@ -14,18 +14,18 @@ namespace CrossTest
 		{
 			if (target == null) return;
 
-			Gizmos.color = Color.red;
-			Gizmos.DrawRay(transform.position, 5f * transform.forward);
+			Gizmos.color = Color.blue;
+			Gizmos.DrawRay(transform.position, transform.forward);
 
-			Gizmos.color = Color.green;
+			Gizmos.color = Color.red;
 			Gizmos.DrawLine(transform.position, target.position);
 
 
-			Gizmos.color = Color.blue;
+			Gizmos.color = Color.green;
 			Vector3 _dir = target.position - transform.position;
 			Vector3 _cross = Vector3.Cross(transform.forward, _dir.normalized);
 
-			Gizmos.DrawRay(transform.position, 5f * _cross);
+			Gizmos.DrawRay(transform.position, _cross);
 
 			msg.text = "cross:" + _cross 
 				+"\n dot:" + Vector3.Dot(Vector3.up, _cross.normalized);
