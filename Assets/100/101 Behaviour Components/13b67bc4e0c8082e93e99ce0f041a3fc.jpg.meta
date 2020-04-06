@@ -1,15 +1,16 @@
 fileFormatVersion: 2
 guid: 72ce20d12f2e84149bd15bc2d8bbd664
-timeCreated: 1532769575
-licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
-    21300000: down_1
-    21300002: left_1
-    21300004: up_1
-    21300006: down_2
-    21300008: left_2
-    21300010: up_2
+    21300000: ws_001
+    21300002: ws_102
+    21300004: ws_203
+    21300006: bs_f1
+    21300008: bs_s1
+    21300010: bs_b1
+    21300012: 13b67bc4e0c8082e93e99ce0f041a3fc_0
+    21300014: ws_101
+    21300016: ws_201
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -51,8 +52,9 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -96,7 +98,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: down_1
+      name: ws_001
       rect:
         serializedVersion: 2
         x: 64
@@ -110,7 +112,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: left_1
+      name: ws_101
       rect:
         serializedVersion: 2
         x: 144
@@ -124,7 +126,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: up_1
+      name: ws_201
       rect:
         serializedVersion: 2
         x: 256
@@ -138,7 +140,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: down_2
+      name: bs_f1
       rect:
         serializedVersion: 2
         x: 64
@@ -152,11 +154,11 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: left_2
+      name: bs_s1
       rect:
         serializedVersion: 2
-        x: 142
-        y: 63
+        x: 141
+        y: 64
         width: 95
         height: 66
       alignment: 0
@@ -166,7 +168,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: up_2
+      name: bs_b1
       rect:
         serializedVersion: 2
         x: 255
