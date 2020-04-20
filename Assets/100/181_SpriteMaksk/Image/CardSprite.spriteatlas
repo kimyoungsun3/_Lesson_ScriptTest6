@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: CardSprite
+  m_EditorData:
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingParameters:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 14e04a0ecab9934488196391b5b184fb, type: 3}
+    - {fileID: 102900000, guid: ae5439f4fc2f58f4c919c0c4e19a0aa7, type: 3}
+    - {fileID: 102900000, guid: e24424218b5846643883864ecc6f150d, type: 3}
+    - {fileID: 102900000, guid: 7b5d76090ce78ed44ba450a830ecf254, type: 3}
+    - {fileID: 102900000, guid: 601f50739d9c4d64cbb57679feaaa48a, type: 3}
+    - {fileID: 102900000, guid: 2a70c677279ab1d459cb0f5f98a30ddc, type: 3}
+    totalSpriteSurfaceArea: 2659458
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 174ca693c822bf04b809ea3dd7c92490, type: 3}
+  - {fileID: 21300000, guid: 68089195251474b40ac2cd20a64f8a5e, type: 3}
+  - {fileID: 21300000, guid: 0170693a21a909942891930c906b05c5, type: 3}
+  - {fileID: 21300000, guid: 34d2094fa2ab06940be7eac9c03cc720, type: 3}
+  - {fileID: 21300000, guid: bb09fa7f22f09ed4c83e8ccb58089a9e, type: 3}
+  - {fileID: 21300000, guid: e81f1b6f5e31c9c4aadd6dc2e328be54, type: 3}
+  - {fileID: 21300000, guid: 18ecf302b63205048b1544dc202b3899, type: 3}
+  - {fileID: 21300000, guid: d7e3436d1b7208d4d9b299f9c727b504, type: 3}
+  - {fileID: 21300000, guid: 910e8cc0ef528a14092768a4612f9143, type: 3}
+  - {fileID: 21300000, guid: eb27bf31caa313049a52e35aa6d4284e, type: 3}
+  - {fileID: 21300000, guid: 9aaab39479c890d4fbf0517ba4ff138f, type: 3}
+  - {fileID: 21300000, guid: edded9945235b824594e89ab82dc9205, type: 3}
+  - {fileID: 21300000, guid: ae738b077dcc90e4fb7a1cf829b810ef, type: 3}
+  - {fileID: 21300000, guid: 25f281d868482c247a48379f339152d9, type: 3}
+  - {fileID: 21300000, guid: 42d3a3d1a2af98748bd7887292a26002, type: 3}
+  - {fileID: 21300000, guid: e3617a44378065449a45faee71a9e345, type: 3}
+  - {fileID: 21300000, guid: 654eaa365589ece4bb7a3e7e7391e965, type: 3}
+  - {fileID: 21300000, guid: a46444fa54eece7418eb536fab3ba69d, type: 3}
+  - {fileID: 21300000, guid: 2379329d272905c40944f4567a6cdcf9, type: 3}
+  - {fileID: 21300000, guid: edfbb12e37a027b40a4a480e52933523, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - eichi_SRARE2_front
+  - eichi_RARE2_front
+  - eichi_SRARE_front
+  - eichi_RARE2_back
+  - eichi_RARE_front
+  - f002
+  - f003
+  - f001
+  - eichi_NORMAL2_front
+  - f001
+  - eichi_NORMAL_front
+  - f002
+  - f003
+  - eichi_NORMAL_back
+  - eichi_NORMAL_back
+  - eichi_NORMAL_front
+  - f002
+  - eichi_NORMAL2_front
+  - f003
+  - f001
+  m_Tag: CardSprite
+  m_IsVariant: 0
