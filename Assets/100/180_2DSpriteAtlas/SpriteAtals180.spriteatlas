@@ -11,7 +11,7 @@ SpriteAtlas:
       serializedVersion: 2
       anisoLevel: 1
       compressionQuality: 50
-      maxTextureSize: 2048
+      maxTextureSize: 1024
       textureCompression: 0
       filterMode: 1
       generateMipMaps: 0
@@ -21,24 +21,24 @@ SpriteAtlas:
     platformSettings: []
     packingParameters:
       serializedVersion: 2
-      padding: 4
+      padding: 2
       blockOffset: 1
       allowAlphaSplitting: 0
-      enableRotation: 1
-      enableTightPacking: 1
+      enableRotation: 0
+      enableTightPacking: 0
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 39ba88e89d5279448a2b709300a1b083, type: 3}
-    totalSpriteSurfaceArea: 293907
+    totalSpriteSurfaceArea: 179889
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
-  - {fileID: 21300000, guid: 3a19022a958de4843b53ae86852427f4, type: 3}
   - {fileID: 21300000, guid: b59b9e4a4ae8ee844be49ef49cf0fe4f, type: 3}
+  - {fileID: 21300000, guid: 3a19022a958de4843b53ae86852427f4, type: 3}
   - {fileID: 21300000, guid: 1132e58ab76f952449dc7558d48b4301, type: 3}
   m_PackedSpriteNamesToIndex:
-  - f002
   - f001
+  - f002
   - f003
   m_Tag: SpriteAtals180
   m_IsVariant: 0
