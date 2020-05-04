@@ -2,15 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LifeCycleU : MonoBehaviour {
+namespace _109_UpdateAndFixedUpdate
+{
+	public class LifeCycleU : MonoBehaviour
+	{
 
 
-	void Update () {
-		Debug.Log ("Update :" + Time.deltaTime);	
-	}
+		void Update()
+		{
+			Debug.Log("Update :" + Time.deltaTime);
+		}
 
 
-	void FixedUpdate () {
-		Debug.Log ("FixedUpdate :" + Time.deltaTime);	
+		void FixedUpdate()
+		{
+			Debug.Log("FixedUpdate :" + Time.deltaTime);
+		}
 	}
 }

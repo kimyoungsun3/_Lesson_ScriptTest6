@@ -8,7 +8,10 @@ namespace PropertyTest{
 
 		void Start(){
 			UserData.ins.exp = 100;
-			Debug.Log (UserData.ins.exp  + " > lv:" + UserData.ins.level);
+			Debug.Log (UserData.ins.exp  
+				+ " > lv:" + UserData.ins.level
+				+ " > job class:" + UserData.ins.job
+				);
 		}
 	}
 }

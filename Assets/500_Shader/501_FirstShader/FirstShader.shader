@@ -38,8 +38,8 @@
 		float _colorPlus;
 		void surf(Input IN, inout SurfaceOutputStandard o){
 
-			_Color = 1 - _Color;
-			o.Albedo = _Color;
+			_Color2 = 1 - _Color;
+			o.Albedo = _Color2;
 			//_colorPlus = 0.2;
 
 			//_colorR = 0.5 + _colorPlus;
