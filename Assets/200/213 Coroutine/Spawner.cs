@@ -20,8 +20,8 @@ public class Spawner : MonoBehaviour {
 		while (true) {	
 			yield return _wait;		
 			int _idx = Random.Range (0, points.Length);
-			_trans = Instantiate (prefabEnemy, points [_idx].position, points [_idx].rotation) as Transform;
-			_scp = _trans.GetComponent<CoroutineExample> ();
+			_trans	= Instantiate (prefabEnemy, points [_idx].position, points [_idx].rotation) as Transform;
+			_scp	= _trans.GetComponent<CoroutineExample> ();
 			if (_scp != null) {
 				_scp.SetTarget (player);
 			}

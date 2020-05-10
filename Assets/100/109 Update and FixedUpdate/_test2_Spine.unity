@@ -274,7 +274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bb1362fccb4f6b489f1789ea6c95612, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateType: 2
+  rotateType: 1
   turnSpeed: 90
 --- !u!1 &875904141
 GameObject:
@@ -372,7 +372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bb1362fccb4f6b489f1789ea6c95612, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateType: 2
+  rotateType: 1
   turnSpeed: 90
 --- !u!1 &909758668
 GameObject:
@@ -470,7 +470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bb1362fccb4f6b489f1789ea6c95612, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateType: 2
+  rotateType: 1
   turnSpeed: 90
 --- !u!1 &1756372887
 GameObject:
