@@ -8,10 +8,12 @@ namespace _146_VectorTest
 	{
 		public Transform p0, p1, p2;
 		public UILabel text;
+		//int count = 0;
 
 		private void OnDrawGizmos()
 		{
-			if (p0 == null) return;
+			//Debug.Log(this + ":" + count++);
+			if (p2 == null) return;
 
 			Vector3 _dir1 = p1.position - p0.position;
 			Vector3 _dir2 = p2.position - p0.position;
