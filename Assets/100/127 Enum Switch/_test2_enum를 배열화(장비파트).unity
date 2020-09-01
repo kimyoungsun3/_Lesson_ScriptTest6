@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.4964127, b: 0.57481724, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571385, b: 0.30692253, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -268,8 +268,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1709462030}
   - component: {fileID: 1709462029}
+  - component: {fileID: 1709462032}
+  - component: {fileID: 1709462031}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: EnumTest2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -300,3 +302,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1709462031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1709462028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19e100b5722570a4699c16d87708468a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parts:
+  - part: 0
+    icon: {fileID: 0}
+    skin: {fileID: 0}
+  - part: 1
+    icon: {fileID: 0}
+    skin: {fileID: 0}
+  - part: 2
+    icon: {fileID: 0}
+    skin: {fileID: 0}
+--- !u!114 &1709462032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1709462028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a51da49fe1420045bd66eaa2efc5fdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parts: 00000000010000000200000003000000

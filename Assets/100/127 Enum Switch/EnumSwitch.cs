@@ -6,31 +6,22 @@ namespace EnumTest
 {
 	public class EnumSwitch : MonoBehaviour
 	{
-		public enum eDirection
-		{
-			North, South, East, West
-		};
+		public enum eDirection	{	North, South, East, West };
 
 		public eDirection dir = eDirection.North;
 
-		void Start()
+		void Update()
 		{
+			Debug.Log(dir.ToString() + ":" + (int)dir);
 			switch (dir)
 			{
 				case eDirection.North:
-					Debug.Log(" North");
 					break;
 				case eDirection.South:
-					Debug.Log(" South");
 					break;
 				case eDirection.East:
-					Debug.Log(" East");
 					break;
 				case eDirection.West:
-					Debug.Log(" West");
-					break;
-				default:
-					Debug.Log(" xxx");
 					break;
 			}
 		}
