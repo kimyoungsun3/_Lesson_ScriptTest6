@@ -38,7 +38,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - NoForce
   m_SortingLayers:
   - name: Background
     uniqueID: 518382743
