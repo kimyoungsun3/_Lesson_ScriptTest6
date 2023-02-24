@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace _146_VectorTest
 {
 	public class VectorAngle : MonoBehaviour
 	{
 		public Transform p0, p1, p2;
-		public UILabel text;
+		public Text text;
 		//int count = 0;
 
 		private void OnDrawGizmos()

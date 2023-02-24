@@ -6,6 +6,7 @@ namespace VectorTest2
 {
 	public class BulletSpawner : MonoBehaviour
 	{
+		[SerializeField] Vector2 MIN_MAX = new Vector2(0f, 360f);
 		[SerializeField] Vector2 min, max;
 		[SerializeField] GameObject prefab;
 		int num = 0;
@@ -22,7 +23,7 @@ namespace VectorTest2
 			if (Input.GetMouseButtonDown(0))
 			{
 				Vector3 _pos = new Vector3(Random.Range(min.x, max.x), Random.Range(min.y, max.y), 0);
-				Quaternion _rot = Quaternion.Euler(0, 0, Random.Range(0, 360f));
+				Quaternion _rot = Quaternion.Euler(0, 0, Random.Range(MIN_MAX.x, MIN_MAX.y));
 				GameObject _go = Instantiate(prefab, _pos, _rot);
 				_go.name += num++;
 			}

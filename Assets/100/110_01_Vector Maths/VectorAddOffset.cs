@@ -15,7 +15,7 @@ namespace VectorTest{
 
 				Gizmos.color = Color.green;
 				Gizmos.DrawLine (Vector3.zero, p2.position);
-				Gizmos.DrawLine (p1.position, p1.position + p2.position);
+				Gizmos.DrawRay (p1.position, p1.position + p2.position);
 
 				Gizmos.color = Color.blue;
 				Gizmos.DrawLine (Vector3.zero, p1.position + p2.position);

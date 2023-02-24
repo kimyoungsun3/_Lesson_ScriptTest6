@@ -55,7 +55,8 @@ namespace VectorTest2
 			}
 			else
 			{
-				trans.Translate(_deltaPos, Space.World);
+				//trans.Translate(_deltaPos, Space.World);
+				trans.position += _deltaPos;
 			}
 		}
 

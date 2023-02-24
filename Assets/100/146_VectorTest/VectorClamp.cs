@@ -18,7 +18,8 @@ namespace _146_VectorTest
 			Gizmos.DrawLine(p0.position, p1.position);
 
 			Vector3 _dir1 = p1.position - p0.position;
-			_dir1 = ClampMagnitude(_dir1, radius);
+			_dir1 = Vector3.ClampMagnitude(_dir1, radius);
+			//_dir1 = ClampMagnitude(_dir1, radius);
 			Gizmos.color = Color.green;
 			Gizmos.DrawLine(p0.position, p0.position + _dir1);
 
